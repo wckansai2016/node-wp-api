@@ -35,3 +35,24 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+# Apache
+.htaccess
+.htpasswd
+
+# Sass
+.sass-cache
+*.scssc
+
+# WordPress
+wp-config.php
+*.sql
+
+# Other unneeded files
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
