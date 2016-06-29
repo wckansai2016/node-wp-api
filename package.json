@@ -1,11 +1,31 @@
 {
   "name": "node-wp-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "WP API Sample Application",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
-  "author": "",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wckansai2016/node-wp-api.git"
+  },
+  "author": "WordCamp Kansai 2016 Organization",
+  "license": "GPL-2.0+",
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^1.5.4",
+    "gulp-watch": "^4.3.8",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
 }
