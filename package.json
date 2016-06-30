@@ -16,7 +16,7 @@
     "url": "https://github.com/wckansai2016/node-wp-api.git"
   },
   "author": "WordCamp Kansai 2016 Organization",
-  "license": "GPL-2.0+",
+  "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.13.0",
     "browserify": "^13.0.1",
