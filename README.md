@@ -24,7 +24,7 @@
     $ npm start
     ```
 
-    For more run-scripts:
+    See more commands:
 
     ```bash
     $ npm run
