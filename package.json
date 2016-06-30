@@ -4,7 +4,12 @@
   "description": "WP API Sample Application",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp"
+    "browserify": "gulp browserify",
+    "browsersync": "gulp browsersync",
+    "build": "gulp build",
+    "sass": "gulp sass",
+    "start": "gulp",
+    "watch": "gulp watch"
   },
   "repository": {
     "type": "git",
