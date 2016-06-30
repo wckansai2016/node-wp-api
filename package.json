@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wckansai2016/node-wp-api.git"
+    "url": "git@github.com:kamiyam/node-wp-api.git"
   },
   "author": "WordCamp Kansai 2016 Organization",
   "license": "MIT",
