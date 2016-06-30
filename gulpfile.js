@@ -32,11 +32,12 @@ gulp.task('sass', function () {
  */
 var b = browserify({
   entries: ['./assets/_js/main.js'],
-  transform: [reactify]
+  transform: [reactify],
 });
 
 function bundle() {
-  return b.bundle()
+  return b.transform('browserify-shim', { global: true })
+    .bundle()
     .pipe(source('bundle.js'))
     .pipe(buffer())
     .pipe(uglify())

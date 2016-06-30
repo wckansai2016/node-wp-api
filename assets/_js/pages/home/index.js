@@ -6,14 +6,14 @@ var Posts = require('../../component/posts');
 var $ = require('jquery');
 var api = 'http://api.wp-app.org/wp-json/wp/v2/posts';
 
-
-    module.exports = React.createClass({
+module.exports = React.createClass({
     getInitialState: function(){
       return {
           posts: []
       };
     },
     componentWillMount: function(){
+        // console.log("componentWillMount");
         var self = this;
         $.ajax({
             type: 'GET',
@@ -29,7 +29,7 @@ var api = 'http://api.wp-app.org/wp-json/wp/v2/posts';
 
     },
     componentDidMount: function(){
-        console.log("componentDidMount");
+        // console.log("componentDidMount");
     },
     render: function() {
         return (

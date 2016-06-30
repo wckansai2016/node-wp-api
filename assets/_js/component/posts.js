@@ -2,10 +2,10 @@
 
 var React = require('react');
 
-module.exports = React.createClass({
+var Posts = React.createClass({
     getInitialState: function(){
       return {
-          posts: this.props.posts
+          posts: this.props.initialPosts
       }
     },
     componentWillReceiveProps: function(nextProps){
@@ -32,3 +32,8 @@ module.exports = React.createClass({
         )
     }
 });
+
+Posts.propTypes = { posts: React.PropTypes.array };
+Posts.defaultProps = { initialPosts: [] };
+
+module.exports = Posts;
