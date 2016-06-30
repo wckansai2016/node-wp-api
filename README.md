@@ -10,7 +10,7 @@
 
     or
 
-    [![Github Releases](https://img.shields.io/github/downloads/wckansai2016/node-wp-api/latest/total.svg?label=Download)](https://github.com/wckansai2016/node-wp-api/archive/master.zip)
+    [![Download](https://img.shields.io/badge/Download-v1.0.0-brightgreen.svg)](https://github.com/wckansai2016/node-wp-api/archive/master.zip)
 
 2. Install the dependencies
 
