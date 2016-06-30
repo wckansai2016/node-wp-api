@@ -1,4 +1,4 @@
-# WP API Sample Application [![license](https://img.shields.io/github/license/wckansai2016/node-wp-api.svg?maxAge=2592000)](https://github.com/wckansai2016/node-wp-api/blob/master/LICENSE)
+# WP API Sample Application [![license](https://img.shields.io/github/license/wckansai2016/node-wp-api.svg)](https://github.com/wckansai2016/node-wp-api/blob/master/LICENSE)
 
 ## Usage
 
