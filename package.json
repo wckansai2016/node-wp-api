@@ -26,11 +26,18 @@
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^1.5.4",
     "gulp-watch": "^4.3.8",
+    "reactify": "^1.1.1",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "jquery": "^3.0.0"
+    "history": "^3.0.0",
+    "jquery": "^3.0.0",
+    "node-fetch": "^1.5.3",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.5.1",
+    "whatwg-fetch": "^1.0.0"
   }
 }

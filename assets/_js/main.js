@@ -1,9 +1,6 @@
 'use strict';
 
-global.jQuery = require('jquery');
-global.$ = jQuery;
+var ReactDOM = require('react-dom');
+var routes = require('./routes');
 
-var app = require('./app.js');
-var api = 'http://api.wp-app.org/wp-json/wp/v2/posts';
-
-app.init(api);
+ReactDOM.render(routes, document.getElementById('content'));

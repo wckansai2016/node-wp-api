@@ -11,6 +11,7 @@ var source       = require('vinyl-source-stream');
 var uglify       = require('gulp-uglify');
 var watch        = require('gulp-watch');
 var watchify     = require('watchify');
+var reactify = require('reactify');
 
 /**
  * Sass
@@ -27,9 +28,12 @@ gulp.task('sass', function () {
 });
 
 /**
- * Browserify and Watchify
+ * Browserify and Watchify and Reactify
  */
-var b = browserify(['./assets/_js/main.js']);
+var b = browserify({
+  entries: ['./assets/_js/main.js'],
+  transform: [reactify]
+});
 
 function bundle() {
   return b.bundle()
