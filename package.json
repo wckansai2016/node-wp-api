@@ -34,9 +34,13 @@
   },
   "dependencies": {
     "history": "^3.0.0",
-    "whatwg-fetch": "^1.0.0",
+    "jquery": "^3.0.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
-    "react-router": "^2.5.1"
+    "react-router": "^2.5.1",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "browserify-shim": {
+    "global": true
   }
 }
