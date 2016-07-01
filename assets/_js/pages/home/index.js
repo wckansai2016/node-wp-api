@@ -4,7 +4,6 @@ var React = require('react');
 var Posts = require('../../component/posts');
 var fetch =  require('whatwg-fetch');
 
-var $ = require('jquery');
 var api = 'http://api.wp-app.org/wp-json/wp/v2/posts';
 
 module.exports = React.createClass({
