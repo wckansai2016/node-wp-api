@@ -2,6 +2,7 @@
 
 var React = require('react');
 var Posts = require('../../component/posts');
+var fetch =  require('whatwg-fetch');
 
 var $ = require('jquery');
 var api = 'http://api.wp-app.org/wp-json/wp/v2/posts';
@@ -15,17 +16,17 @@ module.exports = React.createClass({
     componentWillMount: function(){
         // console.log("componentWillMount");
         var self = this;
-        $.ajax({
-            type: 'GET',
-            url: api,
-            dataType: 'json',
-            success: function (data) {
-                self.setState({ posts: data });
-            },
-            error: function (error) {
+
+        fetch(api)
+            .then(function(response) {
+                return response.json()
+            }).then(function(json) {
+                self.setState({
+                    posts:json
+                });
+            }).catch(function(error) {
                 console.log(error);
-            }
-        });
+            });
 
     },
     componentDidMount: function(){
