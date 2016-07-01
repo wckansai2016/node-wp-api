@@ -11,20 +11,20 @@ module.exports = (function () {
       $.ajax({
         type: 'GET',
         url: api,
-        dataType: 'json',
-        success: function (data) {
-          $(data).each(function (index, value) {
-            $('ul.posts').append(
-              '<li class="post">' +
-                '<h2 class="entry-title">' + value.title.rendered + '</h2>' +
-                '<div class="entry-content">' + value.content.rendered + '</div>' +
-              '</li>'
-            );
-          });
-        },
-        error: function (error) {
-          console.log(error);
-        }
+        dataType: 'json'
+      })
+      .done(function (data) {
+        $(data).each(function (index, value) {
+          $('ul.posts').append(
+            '<li class="post">' +
+              '<h2 class="entry-title">' + value.title.rendered + '</h2>' +
+              '<div class="entry-content">' + value.content.rendered + '</div>' +
+            '</li>'
+          );
+        });
+      })
+      .fail(function (error) {
+        console.log(error);
       });
     }
 
