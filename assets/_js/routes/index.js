@@ -6,8 +6,8 @@ var ReactRouter = require('react-router'),
     IndexRoute = ReactRouter.IndexRoute,
     browserHistory = ReactRouter.browserHistory;
 
-var HomePage = require('./pages/home');
-var NotFoundPage = require('./pages/not-found');
+var HomePage = require('../pages/home');
+var NotFoundPage = require('../pages/not-found');
 
 module.exports = (
     <Router history={browserHistory}>
