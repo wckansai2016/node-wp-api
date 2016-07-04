@@ -56,3 +56,6 @@ doc/
 .DS_Store
 .idea
 .secret
+
+/assets/css/*
+/assets/js/*
