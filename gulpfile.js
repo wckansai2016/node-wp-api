@@ -7,6 +7,7 @@ var buffer       = require('vinyl-buffer');
 var gulp         = require('gulp');
 var plumber      = require('gulp-plumber');
 var sass         = require('gulp-sass');
+var sourcemaps   = require('gulp-sourcemaps');
 var source       = require('vinyl-source-stream');
 var uglify       = require('gulp-uglify');
 var watch        = require('gulp-watch');
@@ -17,11 +18,13 @@ var watchify     = require('watchify');
  */
 gulp.task('sass', function () {
   return gulp.src('./assets/_sass/**/*')
+    .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(sass().on('error', sass.logError))
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
       browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
     }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./assets/css'))
     .pipe(browserSync.stream());
 });
@@ -29,13 +32,18 @@ gulp.task('sass', function () {
 /**
  * Browserify and Watchify
  */
-var b = browserify(['./assets/_js/main.js']);
+var b = browserify({
+  entries: ['./assets/_js/main.js'],
+  debug: true
+});
 
 function bundle() {
   return b.bundle()
     .pipe(source('bundle.js'))
     .pipe(buffer())
+    .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(uglify())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./assets/js'))
     .pipe(browserSync.stream());
 }
