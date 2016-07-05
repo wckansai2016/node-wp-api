@@ -24,7 +24,7 @@ gulp.task('sass', function () {
     .pipe(autoprefixer({
       browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
     }))
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('./assets/css'))
     .pipe(browserSync.stream());
 });
@@ -43,7 +43,7 @@ function bundle() {
     .pipe(buffer())
     .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(uglify())
-    .pipe(sourcemaps.write())
+    .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('./assets/js'))
     .pipe(browserSync.stream());
 }
