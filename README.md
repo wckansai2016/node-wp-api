@@ -29,3 +29,21 @@
     ```bash
     $ npm run
     ```
+
+## Forks
+
+- AngularJS
+
+    https://github.com/likr/node-wp-api/tree/angular
+
+- Angular 2
+
+    https://github.com/likr/node-wp-api/tree/angular2
+
+- React
+
+    https://github.com/kamiyam/node-wp-api
+
+- Vue.js
+
+    https://github.com/chatbox-inc/vue-wp-api
