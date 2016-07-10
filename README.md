@@ -36,20 +36,54 @@
 
     https://github.com/likr/node-wp-api/tree/angular
 
+    ```
+    $ git clone -b angular https://github.com/likr/node-wp-api/ angular-wp-api
+    ```
+
 - Angular 2
 
     https://github.com/likr/node-wp-api/tree/angular2
+
+    ```
+    $ git clone -b angular2 https://github.com/likr/node-wp-api/ angular2-wp-api
+    ```
 
 - React
 
     https://github.com/kamiyam/node-wp-api
 
+    ```
+    $ git clone https://github.com/kamiyam/node-wp-api react-wp-api
+    ```
+
+- React with ES6
+
+    https://github.com/kamiyam/node-wp-api/tree/es6/base
+
+    ```
+    $ git clone -b es6/base https://github.com/kamiyam/node-wp-api react-es6-wp-api
+    ```
+
+- React SPA with ES6
+
+    ```
+    $ git clone -b es6/spa https://github.com/kamiyam/node-wp-api react-es6-spa-wp-api
+    ```
+
 - Vue.js
 
     https://github.com/chatbox-inc/vue-wp-api
 
+    ```
+    $ git clone https://github.com/chatbox-inc/vue-wp-api
+    ```
+
 - Riot.js
 
     https://github.com/potato4d/riot-wp-api
+
+    ```
+    $ git https://github.com/potato4d/riot-wp-api
+    ```
 
 
