@@ -47,3 +47,10 @@
 - Vue.js
 
     https://github.com/chatbox-inc/vue-wp-api
+
+- Riot.js
+
+    https://github.com/potato4d/riot-wp-api
+
+
+
