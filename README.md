@@ -66,6 +66,8 @@
 
 - React SPA with ES6
 
+    https://github.com/kamiyam/node-wp-api/tree/es6/spa
+
     ```
     $ git clone -b es6/spa https://github.com/kamiyam/node-wp-api react-es6-spa-wp-api
     ```
