@@ -34,18 +34,18 @@
 
 - AngularJS
 
-    https://github.com/likr/node-wp-api/tree/angular
+    https://github.com/likr/wpapi-angular-example
 
     ```
-    $ git clone -b angular https://github.com/likr/node-wp-api/ angular-wp-api
+    $ git clone https://github.com/likr/wpapi-angular-example.git
     ```
 
 - Angular 2
 
-    https://github.com/likr/node-wp-api/tree/angular2
+    https://github.com/likr/wpapi-angular2-example
 
     ```
-    $ git clone -b angular2 https://github.com/likr/node-wp-api/ angular2-wp-api
+    $ git clone https://github.com/likr/wpapi-angular2-example.git
     ```
 
 - React
